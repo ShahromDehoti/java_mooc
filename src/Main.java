@@ -26,15 +26,24 @@ public class Main {
 //        }
 //        Book book = new Book("J.K. Rowling", "Harry Potter", 223);
 //        System.out.println(book);
-        Cube oSheaJackson = new Cube(4);
-        System.out.println(oSheaJackson.volume());
-        System.out.println(oSheaJackson);
+//        Cube oSheaJackson = new Cube(4);
+//        System.out.println(oSheaJackson.volume());
+//        System.out.println(oSheaJackson);
+//
+//        System.out.println();
+//
+//        Cube salt = new Cube(2);
+//        System.out.println(salt.volume());
+//        System.out.println(salt);
+        Fitbyte assistant = new Fitbyte(30, 60);
 
-        System.out.println();
+        double percentage = 0.5;
 
-        Cube salt = new Cube(2);
-        System.out.println(salt.volume());
-        System.out.println(salt);
+        while (percentage < 1.0) {
+            double target = assistant.targetHeartRate(percentage);
+            System.out.println("Target " + (percentage * 100) + "% of maximum: " + target);
+            percentage = percentage + 0.1;
+        }
     }
 
 //    public static void printText() {
