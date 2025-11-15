@@ -24,8 +24,17 @@ public class Main {
 //
 //            }
 //        }
-        Book book = new Book("J.K. Rowling", "Harry Potter", 223);
-        System.out.println(book);
+//        Book book = new Book("J.K. Rowling", "Harry Potter", 223);
+//        System.out.println(book);
+        Cube oSheaJackson = new Cube(4);
+        System.out.println(oSheaJackson.volume());
+        System.out.println(oSheaJackson);
+
+        System.out.println();
+
+        Cube salt = new Cube(2);
+        System.out.println(salt.volume());
+        System.out.println(salt);
     }
 
 //    public static void printText() {
