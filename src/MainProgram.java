@@ -1,26 +1,14 @@
 public class MainProgram {
     public static void main(String[] args) {
-        PaymentCard Paul = new PaymentCard(20);
-        PaymentCard Matt = new PaymentCard(30);
+        PaymentCard petesCard = new PaymentCard(10);
 
-        Paul.eatHeartily();
-        Matt.eatAffordably();
+        System.out.println("money " + petesCard.balance());
+        boolean wasSuccessful = petesCard.takeMoney(8);
+        System.out.println("successfully withdrew: " + wasSuccessful);
+        System.out.println("money " + petesCard.balance());
 
-        System.out.println(Paul);
-        System.out.println(Matt);
-
-        Paul.addMoney(20);
-        Matt.eatHeartily();
-
-        System.out.println(Paul);
-        System.out.println(Matt);
-
-        Paul.eatAffordably();
-        Paul.eatAffordably();
-
-        Matt.addMoney(50);
-
-        System.out.println(Paul);
-        System.out.println(Matt);
+        wasSuccessful = petesCard.takeMoney(4);
+        System.out.println("successfully withdrew: " + wasSuccessful);
+        System.out.println("money " + petesCard.balance());
     }
 }
